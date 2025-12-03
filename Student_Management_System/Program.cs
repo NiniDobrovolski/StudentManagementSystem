@@ -1,7 +1,6 @@
-﻿using System.Xml.Linq; 
-using Student_Management_System; 
+﻿using Student_Management_System;
 
-Student student = new Student(null,null,0,' '); //Creating a new instance of Student class
+Student student = new Student(null, null, 0, ' '); //Creating a new instance of Student class
 StudentManagmentSystem sms = new StudentManagmentSystem(); //Creating a new instance of StudentManagmentSystem class
 
 Console.WriteLine("Welcome To The Student Management System Of 'The School of Programming'");
@@ -38,14 +37,16 @@ while (loop) //Loop to handle user interactions
             }
             else
             {
-                if (sms.RollNumberExist(rollNumber)) { throw new RollNumberExistsException(); }; //Checking if roll number already exists
+                if (sms.RollNumberExist(rollNumber)) { throw new RollNumberExistsException(); }
+                ; //Checking if roll number already exists
 
                 Console.WriteLine("\tEnter Grade:");
-                char grade = char.Parse(Console.ReadLine()); 
+                char grade = char.Parse(Console.ReadLine());
 
-                if ((int)grade < 65 || (int)grade > 70 ) { throw new WrongGradeException(); } //Checking if grade is within valid range
-                else {
-                    sms.AddStudent(name, lastname, rollNumber, grade); Console.WriteLine("Student added successfully!") ; //Adding student if all conditions are met
+                if ((int)grade < 65 || (int)grade > 70) { throw new WrongGradeException(); } //Checking if grade is within valid range
+                else
+                {
+                    sms.AddStudent(name, lastname, rollNumber, grade); Console.WriteLine("Student added successfully!"); //Adding student if all conditions are met
                     goto begin;
                 }
             }
