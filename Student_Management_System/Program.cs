@@ -1,5 +1,6 @@
 ﻿using Student_Management_System;
 
+
 Student student = new Student(null, null, 0, ' '); //Creating a new instance of Student class
 StudentManagmentSystem sms = new StudentManagmentSystem(); //Creating a new instance of StudentManagmentSystem class
 
