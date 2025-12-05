@@ -1,6 +1,6 @@
 ﻿namespace Student_Management_System
 {
-    // Class for managing student data
+    //Class for managing student data
     public class StudentManagmentSystem
     {
         //List to store lecturer objects
