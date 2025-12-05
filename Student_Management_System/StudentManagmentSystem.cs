@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Student_Management_System;
-
-
-namespace Student_Management_System
+﻿namespace Student_Management_System
 {
     // Class for managing student data
     public class StudentManagmentSystem
@@ -71,7 +66,7 @@ namespace Student_Management_System
             Students.Add(news);
             RollNumbers.Add(rollNumber);
         }
-        
+
 
         //Method to check if a given roll number exists
         public bool RollNumberExist(int rollNumber)
