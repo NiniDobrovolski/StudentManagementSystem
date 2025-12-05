@@ -96,12 +96,7 @@ namespace Student_Management_System
         //Method to upgrade the grade of a student
         public void UpgradeGrade(Student student, int rollNumber, char newGrade)
         {
-            foreach (var item in Students)
-            {
-                //If the student's roll number matches the provided roll number, update the grade
-                if (student.RollNumber == rollNumber)
-                    student.Grade = newGrade;
-            }
+            student.Grade = newGrade;
         }
     }
 }
