@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Student_Management_System
+﻿namespace Student_Management_System
 {
     //Custom exception class for handling wrong grades
     internal class WrongGradeException : ApplicationException
@@ -10,13 +8,13 @@ namespace Student_Management_System
         //Constructor to initialize the error message
         public WrongGradeException()
         {
-            _msg = "Enter Correct Grade!"; 
+            _msg = "Enter Correct Grade!";
         }
 
         //Override the Message property to provide custom error message
         public override string Message
         {
-            get { return $"{_msg}"; } 
+            get { return $"{_msg}"; }
         }
     }
 
@@ -28,13 +26,13 @@ namespace Student_Management_System
         //Constructor to initialize the error message
         public RollNumberExistsException()
         {
-            _msg = "Roll Number Is Already Used!"; 
+            _msg = "Roll Number Is Already Used!";
         }
 
         //Override the Message property to provide custom error message
         public override string Message
         {
-            get { return $"{_msg}"; }   
+            get { return $"{_msg}"; }
         }
     }
 

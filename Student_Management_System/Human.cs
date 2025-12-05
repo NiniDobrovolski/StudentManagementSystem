@@ -1,7 +1,4 @@
-﻿using System;
-using Student_Management_System;
-
-namespace Student_Management_System
+﻿namespace Student_Management_System
 {
     public class Human
     {
@@ -31,7 +28,7 @@ namespace Student_Management_System
             IDNumber = nextID++; //Assign a unique ID and increment the counter
         }
 
-      
+
         public override string ToString()
         {
             return $"{Name} {Lastname}";
@@ -42,7 +39,7 @@ namespace Student_Management_System
     public class Student : Human
     {
         public int RollNumber { get; private set; }
-        public char Grade { get;  set; }
+        public char Grade { get; set; }
 
         //Constructor with four arguments
         public Student(string name, string lastname, int rollNumber, char grade) : base(name, lastname)
